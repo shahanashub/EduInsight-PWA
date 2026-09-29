@@ -1,0 +1,26 @@
+{
+  "name": "edu-insight-pwa",
+  "version": "1.0.0",
+  "description": "Predictive Analytics Platform for Student Performance and Skill Development (PWA)",
+  "main": "backend/server.js",
+  "scripts": {
+    "setup": "npm run setup:backend && npm run setup:frontend && npm run setup:ml",
+    "setup:backend": "cd backend && npm install",
+    "setup:frontend": "cd frontend && npm install",
+    "setup:ml": "cd ml && python -m pip install -r requirements.txt",
+    "dev:backend": "cd backend && node server.js",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:ml": "cd ml && python -m uvicorn main:app --port 8000 --reload",
+    "start": "cd backend && node server.js"
+  },
+  "keywords": [
+    "pwa",
+    "predictive-analytics",
+    "react",
+    "express",
+    "fastapi",
+    "education"
+  ],
+  "author": "Abdul Shahanas P P",
+  "license": "ISC"
+}
